@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    border: solid black 1px;
+    width: 300px;
+}
+
+.card h2 {
+    text-align: center;
+}

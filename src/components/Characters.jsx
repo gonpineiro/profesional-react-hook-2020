@@ -9,10 +9,17 @@ const Characters = () => {
             .then(data => setCharacters(data.results))
     }, [])
 
+    const chardCard = (char) => (
+        <div className="card">
+            <h2>{char.name}</h2>
+            <img src={char.image} alt={char.name} />
+        </div>
+    )
+
     return (
         <div className="characters">
             {characters.map(character => (
-                <h2>{character.name}</h2>
+                chardCard(character)
             ))}
         </div>
     );
